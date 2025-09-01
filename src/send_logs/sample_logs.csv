@@ -1,0 +1,16 @@
+timestamp,level,service,message,user_id,request_id,duration_ms,status_code
+2024-01-15T10:30:15Z,INFO,auth-service,User login successful,user123,req-001,245,200
+2024-01-15T10:31:22Z,ERROR,payment-service,Credit card validation failed,user456,req-002,1200,400
+2024-01-15T10:32:08Z,WARN,inventory-service,Low stock alert for product SKU12345,,req-003,89,200
+2024-01-15T10:33:45Z,INFO,order-service,Order created successfully,user789,req-004,567,201
+2024-01-15T10:34:12Z,DEBUG,notification-service,Email notification queued,user123,req-005,23,200
+2024-01-15T10:35:33Z,ERROR,database-service,Connection timeout after 30s,,req-006,30000,500
+2024-01-15T10:36:01Z,INFO,shipping-service,Package dispatched successfully,user456,req-007,134,200
+2024-01-15T10:37:18Z,WARN,auth-service,Multiple failed login attempts detected,user999,req-008,78,429
+2024-01-15T10:38:44Z,INFO,api-gateway,Rate limit reset for client,client-abc,req-009,12,200
+2024-01-15T10:39:55Z,ERROR,recommendation-service,ML model inference failed,,req-010,2500,503
+2024-01-15T10:40:30Z,INFO,user-service,Profile updated successfully,user123,req-011,189,200
+2024-01-15T10:41:15Z,DEBUG,cache-service,Cache miss for key user:456:preferences,user456,req-012,5,200
+2024-01-15T10:42:03Z,WARN,monitoring-service,High memory usage detected on server-05,,req-013,45,200
+2024-01-15T10:43:28Z,INFO,search-service,Search query processed,user789,req-014,678,200
+2024-01-15T10:44:12Z,ERROR,file-service,File upload validation failed,user456,req-015,890,422
