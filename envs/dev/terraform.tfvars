@@ -2,16 +2,6 @@ aws_region       = "us-east-1"
 project_name     = "aiops"
 environment_name = "dev"
 
-# Set to true if you want to deploy resources in a VPC
-create_vpc = false
-
-# VPC Configuration (only used if create_vpc = true)
-vpc_cidr             = "10.0.0.0/16"
-public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
-private_subnet_cidrs = ["10.0.10.0/24", "10.0.20.0/24"]
-create_nat_gateway   = false
-create_vpc_endpoints = false
-
 # Lambda Configuration (Development Settings)
 lambda_bedrock_model_id              = "amazon.titan-embed-text-v2:0"
 lambda_bedrock_timeout               = 30

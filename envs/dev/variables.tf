@@ -26,43 +26,6 @@ variable "tags" {
   }
 }
 
-# Network-related variables
-variable "create_vpc" {
-  description = "Whether to create a VPC for the resources"
-  type        = bool
-  default     = false
-}
-
-variable "vpc_cidr" {
-  description = "CIDR block for the VPC"
-  type        = string
-  default     = "10.0.0.0/16"
-}
-
-variable "public_subnet_cidrs" {
-  description = "List of CIDR blocks for public subnets"
-  type        = list(string)
-  default     = ["10.0.1.0/24", "10.0.2.0/24"]
-}
-
-variable "private_subnet_cidrs" {
-  description = "List of CIDR blocks for private subnets"
-  type        = list(string)
-  default     = ["10.0.10.0/24", "10.0.20.0/24"]
-}
-
-variable "create_nat_gateway" {
-  description = "Whether to create NAT gateways for private subnets"
-  type        = bool
-  default     = false
-}
-
-variable "create_vpc_endpoints" {
-  description = "Whether to create VPC endpoints for AWS services"
-  type        = bool
-  default     = false
-}
-
 # Lambda Configuration Variables
 variable "lambda_bedrock_model_id" {
   description = "Bedrock model ID for embedding generation in Lambda"

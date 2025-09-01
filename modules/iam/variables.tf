@@ -1,5 +1,3 @@
-# modules/iam/variables.tf
-
 variable "collection_arn" {
   description = "ARN of the OpenSearch Serverless collection."
   type        = string

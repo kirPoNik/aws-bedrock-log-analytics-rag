@@ -1,4 +1,3 @@
-# modules/opensearch/main.tf
 terraform {
   required_providers {
     opensearch = {

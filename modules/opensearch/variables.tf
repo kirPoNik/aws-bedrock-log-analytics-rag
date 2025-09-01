@@ -1,5 +1,3 @@
-# modules/opensearch/variables.tf
-
 variable "collection_name" {
   description = "The name of the OpenSearch Serverless collection."
   type        = string

@@ -1,5 +1,3 @@
-# modules/lambda_chatapp/main.tf
-
 module "embedding_lambda" {
   source = "terraform-aws-modules/lambda/aws"
   version = "7.2.1"

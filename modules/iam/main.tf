@@ -1,5 +1,3 @@
-# modules/iam/main.tf
-
 # Role for the OpenSearch Ingestion Pipeline
 resource "aws_iam_role" "osis_pipeline_role" {
   name = "${var.pipeline_name}-role"

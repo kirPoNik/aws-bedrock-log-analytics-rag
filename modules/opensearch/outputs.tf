@@ -1,5 +1,3 @@
-# modules/opensearch/outputs.tf
-
 output "collection_id" {
   description = "The ID of the OpenSearch Serverless collection."
   value       = aws_opensearchserverless_collection.vector_logs.id

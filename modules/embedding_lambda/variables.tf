@@ -1,5 +1,3 @@
-# modules/lambda_chatapp/variables.tf
-
 variable "function_name" {
   description = "The name of the Lambda function."
   type        = string

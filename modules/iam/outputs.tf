@@ -1,5 +1,3 @@
-# modules/iam/outputs.tf
-
 output "opensearch_ingestion_role_arn" {
   description = "The ARN of the IAM role for the OpenSearch Ingestion pipeline."
   value       = aws_iam_role.osis_pipeline_role.arn

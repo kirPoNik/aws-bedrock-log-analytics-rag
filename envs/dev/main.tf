@@ -35,8 +35,7 @@ module "opensearch" {
   access_policy_principals = [
     data.aws_caller_identity.current.arn,
     module.iam.opensearch_ingestion_role_arn,
-    module.iam.lambda_execution_role_arn,
-    "arn:aws:iam::${data.aws_caller_identity.current.account_id}:root",
+    module.iam.lambda_execution_role_arn
   ]
   tags = var.tags
 }
@@ -53,7 +52,7 @@ module "iam" {
 }
 
 module "lambda_chatapp" {
-  source = "../../modules/lambda_chatapp"
+  source = "../../modules/embedding_lambda"
 
   function_name   = "${local.prefix}-embedding-lambda"
   source_code_path = "../../src/embedding_lambda"
@@ -77,7 +76,7 @@ module "lambda_chatapp" {
 }
 
 module "ingestion" {
-  source = "../../modules/ingestion"
+  source = "../../modules/ingestion_pipeline"
 
   pipeline_name                  = "${local.prefix}-pipeline"
   opensearch_collection_endpoint = module.opensearch.collection_endpoint

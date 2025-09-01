@@ -1,5 +1,3 @@
-# modules/ingestion/variables.tf
-
 variable "pipeline_name" {
   description = "Name for the OpenSearch Ingestion pipeline."
   type        = string

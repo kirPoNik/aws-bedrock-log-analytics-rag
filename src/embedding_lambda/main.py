@@ -173,11 +173,6 @@ def lambda_handler(data: Dict[str, Any], context) -> Dict[str, Any]:
                     )
                 
                 # Keep the original record structure and append the modified data
-                logger.debug(
-                    "The final record after embedding",
-                    lambda_request_id=request_id,
-                    record=record
-                )
                 processed_records.append(record)
                 
             except Exception as e:

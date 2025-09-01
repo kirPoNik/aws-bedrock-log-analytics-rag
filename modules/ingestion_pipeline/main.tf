@@ -1,5 +1,3 @@
-# modules/ingestion/main.tf
-
 data "aws_region" "current" {}
 
 resource "aws_cloudwatch_log_group" "osis_pipeline_logs" {
